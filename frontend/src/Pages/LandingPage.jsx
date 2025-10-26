@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -25,8 +26,8 @@ export default function LandingPage() {
             <nav className="lp-nav">
                 <div className="lp-logo">🌱 FreeTree</div>
                 <div className="lp-nav-links">
-                    <a href="#signup" className="btn ghost">Sign Up</a>
-                    <a href="#signin" className="btn primary">Sign In</a>
+                  <Link to="/signup" className="btn ghost">Sign Up</Link>
+                  <Link to="/login" className="btn primary">Sign In</Link>
                 </div>
             </nav>
 
